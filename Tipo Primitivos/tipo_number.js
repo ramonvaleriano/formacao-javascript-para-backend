@@ -6,6 +6,18 @@ const primeiroNumero = 1;
 
 const segundoNumero = 2;
 
-const operacaoMatematica = primeiroNumero + segundoNumero
+const operacaoMatematicaSoma = primeiroNumero + segundoNumero;
 
-console.log(operacaoMatematica)
+const operacaoMatematicaMultiplicao = primeiroNumero * segundoNumero;
+
+const operacaoMatematicaDivisao = primeiroNumero / segundoNumero;
+
+const operacaoMatematicaSubtracao = primeiroNumero * segundoNumero;
+
+console.log(operacaoMatematicaSoma)
+
+console.log(operacaoMatematicaMultiplicao)
+
+console.log(operacaoMatematicaDivisao)
+
+console.log(operacaoMatematicaSubtracao)
