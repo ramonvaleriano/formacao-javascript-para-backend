@@ -11,3 +11,9 @@ console.log(cidade == input)
 const novoInput = input.toLowerCase(input)
 
 console.log(cidade == novoInput)
+
+// Quantidade de caracteres
+
+const senha = '123senha123'
+
+console.log(senha.length)
