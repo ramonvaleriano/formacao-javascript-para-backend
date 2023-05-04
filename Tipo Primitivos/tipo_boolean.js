@@ -11,3 +11,11 @@ comparador2 = terceiroNumero === primeiroNumero
 
 console.log(comparador2)
 
+const texto1 = 'Alura'
+const texto2 = 'alura'
+
+console.log(texto1 === texto2)
+
+const texto3 = texto1.toLowerCase()
+
+console.log(texto2 === texto3)
