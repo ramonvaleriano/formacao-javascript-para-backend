@@ -8,3 +8,7 @@ const verdadeiro1 = 1
 const falso1 = 0
 
 console.log(verdadeiro == verdadeiro1)
+console.log(0 == false)
+console.log('' == false)
+
+console.log(1 == true)
