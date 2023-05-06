@@ -22,3 +22,17 @@ console.log(dataBool)
 console.log(stringBool)
 console.log(dataBool1)
 console.log(stringBool1)
+
+// Convertendo String em Números
+
+let string1 = '123'
+let string2 = '456'
+
+let number1 = Number(string1)
+let number2 = parseInt(string2)
+
+console.log('\nTestando as conversões de string para números: ')
+console.log(number1)
+console.log(number2)
+
+console.log(number1 + number2)
