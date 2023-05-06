@@ -35,4 +35,16 @@ console.log('\nTestando as conversões de string para números: ')
 console.log(number1)
 console.log(number2)
 
+console.log(+ string1 * + string2)
+
 console.log(number1 + number2)
+
+// Gerando NaN
+
+let nome = 'Leonardo'
+let conversaoNome = Number(nome)
+
+console.log('Gerando o NaN')
+console.log(conversaoNome)
+console.log(+ nome)
+
