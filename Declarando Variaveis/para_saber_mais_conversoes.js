@@ -48,3 +48,13 @@ console.log('Gerando o NaN')
 console.log(conversaoNome)
 console.log(+ nome)
 
+// Booleano para número
+
+let dataBoolean1 = true
+let dataBoolean2 = false
+
+let numberBool = Number(dataBoolean1)
+
+console.log('Testando a conversão de booleano para número: ')
+console.log(numberBool)
+console.log(+ dataBoolean2)
