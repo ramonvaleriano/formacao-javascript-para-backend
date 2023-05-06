@@ -26,11 +26,18 @@ console.log(area1)
 
 // Const
 
+const forma2 = 'quadrado'
 const altura2 = 2
 const comprimento2 = 4
 
-const area2 = altura2 * comprimento2
+let area2;
 
+if (forma2 == 'quadrado'){
+    area2 = altura2 * comprimento2
+}
+else {
+    area2 = (altura2 * comprimento2)/2
+}
 console.log('\n\n')
 console.log(area2)
 console.log('\n\n')
