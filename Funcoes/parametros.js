@@ -14,7 +14,7 @@ function nomeIdade(nome, idade){
 
 console.log(nomeIdade('Ramon', 33))
 
-function multiplicacao(numero1=0, numero2=0){
+function multiplicacao(numero1=1, numero2=1){
     return numero1 * numero2
 }
 
