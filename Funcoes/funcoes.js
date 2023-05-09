@@ -16,4 +16,8 @@ function soma(){
     return resultado
 }
 
-console.log(soma())
+console.log(soma()) 
+
+// Passando uma função dentro de outra função.
+imprimir_mensagem('\nVamos passar uma função dentro da outra -- >')
+imprimir_mensagem(soma())
