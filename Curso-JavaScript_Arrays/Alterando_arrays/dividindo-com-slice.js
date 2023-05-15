@@ -23,8 +23,8 @@ const alunosTotal = [
   "Camilo",
 ];
 
-primeiraTurma = alunosTotal.slice(0, 10)
-segundaTurma = alunosTotal.slice(10)
+primeiraTurma = alunosTotal.slice(0, alunosTotal.length / 2)
+segundaTurma = alunosTotal.slice(alunosTotal.length / 2)
 
 console.log(`A turma toda tem ${alunosTotal.length}`)
 console.log(`Turma: ${alunosTotal}`)
