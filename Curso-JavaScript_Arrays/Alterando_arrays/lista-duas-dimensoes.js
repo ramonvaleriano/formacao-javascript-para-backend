@@ -7,3 +7,8 @@ const media = [10, 8, 7.5, 9];
 
 const listaAlunosMedias = [alunos, media];
 
+console.log(`Junção das duas lista: ${listaAlunosMedias}`);
+
+// Acessando os dados de forma individual.
+console.log("Acessando os dados de forma individual: ");
+console.log(`${listaAlunosMedias[0][0]}`);
