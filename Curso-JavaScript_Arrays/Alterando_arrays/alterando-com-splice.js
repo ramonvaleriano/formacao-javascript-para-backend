@@ -18,3 +18,17 @@ alunos.splice(2, 2)
 
 console.log('Lista após ter deletado o elemento do indice 2, duas vezes: ')
 console.log(alunos)
+
+// Adicionando um novo nome na lista de dados.
+
+alunos.push("Ramon")
+
+console.log(`Lista após ter adicionado um novo elemento: `)
+console.log(alunos)
+
+// Retirando um elemento e adicionando um no lugar.
+
+alunos.splice(2, 1, "Milla")
+
+console.log(`Lista após ter retirando o elemento de indice 2, uma única vez e adicionando um novo elemento: `)
+console.log(alunos)
