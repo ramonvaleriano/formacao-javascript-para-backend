@@ -17,3 +17,9 @@ notas.forEach(function (nota) {
 media = somaNumeros / notas.length;
 
 console.log(`A media das notas: ${media}`);
+
+// Exibindo cada nota e cada indice.
+console.log('\nMostrando as notas e os indices: ')
+notas.forEach(function (elemento, indice){
+    console.log(`${elemento} --> ${indice}`)
+})
