@@ -18,3 +18,14 @@ console.log('\nPulando uma linha e sendo maior que 300: ')
 for(i=numeros.length - 1; numeros[i] >= 300; i-=2){
     console.log(numeros[i])
 }
+
+// Criando uma lista com número pares.
+console.log('Criando uma lista com número pares: ')
+
+let numerosPares = []
+
+for(i=0; i<=100; i+=2){
+    numerosPares.push(i)
+}
+
+console.log(numerosPares)
