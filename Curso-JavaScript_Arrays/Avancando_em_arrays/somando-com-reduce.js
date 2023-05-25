@@ -18,3 +18,10 @@ function calculaMedia(notasDaSala) {
 }
 
 const mediaJS = calculaMedia(salaJS);
+const mediaPython = calculaMedia(salaPython);
+const mediaJava = calculaMedia(salaJava);
+
+console.log('A media de cada linguagem: ')
+console.log(`JavaScript: ${mediaJS}`)
+console.log(`Python: ${mediaPython}`)
+console.log(`Java: ${mediaJava}`)
