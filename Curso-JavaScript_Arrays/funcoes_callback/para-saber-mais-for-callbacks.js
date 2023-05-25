@@ -33,3 +33,21 @@ console.log("\nUsando forEach com uma arrow function.");
 let somatoria = 0;
 lista.forEach((numero) => (somatoria += numero));
 console.log(`A somatória: ${somatoria}`);
+
+// Usando forEach mais de uma linha.
+console.log('\nUsando forEach com mais de uma linha.')
+let somaTotal = 0;
+lista.forEach(numero => {
+    somaTotal += numero
+})
+console.log(`SomaTotal: ${somaTotal}`)
+
+// Usando ForEache com uma funcao convencional.
+console.log('Usando ForEache com uma funcao convencional')
+var SOMA = 0
+function somandoTudo(numero){
+    SOMA += numero
+}
+
+lista.forEach(somandoTudo)
+console.log(`Somando Tudo: ${SOMA}`)
