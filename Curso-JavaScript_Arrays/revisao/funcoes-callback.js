@@ -36,23 +36,26 @@ console.log(`A Média: ${media}`);
 
 // Usando varios tipos de forEach.
 
-console.log('\nUsando vários tipos de forEach: ')
-console.log('Usando uma função externa: ')
-function exibirAlgo(nome){
-    console.log(nome)
+console.log("\nUsando vários tipos de forEach: ");
+console.log("Usando uma função externa: ");
+function exibirAlgo(nome) {
+  console.log(nome);
 }
 
-notas.forEach(exibirAlgo)
+notas.forEach(exibirAlgo);
 
-console.log('Usando uma função interna: ')
-notas.forEach(function (numero){
-    console.log(numero)
-})
+console.log("Usando uma função interna: ");
+notas.forEach(function (numero) {
+  console.log(numero);
+});
 
-console.log(('Usando arrow funcion:'))
-notas.forEach(nota => console.log(nota))
+console.log("Usando arrow funcion:");
+notas.forEach((nota) => console.log(nota));
 
-console.log('Usando arrow function multiplas linhas: ')
-notas.forEach(nota => {
-    console.log(nota)
-})
+console.log("Usando arrow function multiplas linhas: ");
+notas.forEach((nota) => {
+  console.log(nota);
+});
+
+/*Usando o map.*/
+const novasNotas = [10, 9.5, 8, 7, 6];
