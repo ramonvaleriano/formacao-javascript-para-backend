@@ -59,3 +59,39 @@ notas.forEach((nota) => {
 
 /*Usando o map.*/
 const novasNotas = [10, 9.5, 8, 7, 6];
+
+// Entendendo como o map funciona.
+console.log("\nEntendendo como o map funciona:");
+novasNotas.map((nota) => console.log(nota));
+
+// Usando uma função comum.
+console.log("\nUsando uma função:");
+novasNotas.map(function (nota) {
+  console.log(nota);
+});
+
+// Retornando um dado do map.
+console.log("\nRetornando a soma dos valores acima: ");
+let somaLegal = 0;
+let somaMap = novasNotas.map((nota) => {
+  somaLegal += nota;
+  return somaLegal;
+});
+console.log(`Resultado da soma: ${somaLegal}`);
+
+// Adicionando um número em cada elemento.
+console.log("\nAdiconando um numero em cada elemento: ");
+let numeroDesejado = 1;
+const novaLista1 = novasNotas.map((elemento, indicie) => {
+  console.log(`O elemento: ${elemento} -- O indice: ${indicie}`);
+  return elemento + numeroDesejado;
+});
+console.log(`Resultado: ${novaLista1}`);
+
+// Validando se é maior que a média ou não.
+console.log("\nValidando se o número é maior que a média ou não: ");
+const notasAprovadas = novasNotas.map((numero) => {
+  return numero + 1 >= 10 ? 10 : numero + 1;
+});
+
+console.log(`resultado: ${notasAprovadas}`);
