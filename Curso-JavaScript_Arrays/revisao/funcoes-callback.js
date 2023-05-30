@@ -95,3 +95,13 @@ const notasAprovadas = novasNotas.map((numero) => {
 });
 
 console.log(`resultado: ${notasAprovadas}`);
+
+// Usando map com string, deixando todas as letras padronizadas.
+console.log('Padronizando os nomes')
+const nomes = ["ana Julia", "Caio vinicius", "BIA silva"];
+
+const nomesPadronizados = nomes.map((nome) => {
+    return nome.toUpperCase()
+})
+
+console.log(`Resultado: ${nomesPadronizados}`)
