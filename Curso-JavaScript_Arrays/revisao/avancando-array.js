@@ -82,3 +82,8 @@ let somaJAVA = calculoDasMedias(salaJava);
 console.log(somaPython);
 console.log(somaJS);
 console.log(somaJAVA);
+
+/*Como clonar um array.*/
+
+// Dados para serem usados.
+const notasRepetidas = [7, 7, 8, 9];
