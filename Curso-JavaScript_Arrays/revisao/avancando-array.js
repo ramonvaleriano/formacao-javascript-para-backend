@@ -87,3 +87,4 @@ console.log(somaJAVA);
 
 // Dados para serem usados.
 const notasRepetidas = [7, 7, 8, 9];
+const novosDados = [...notasDaSala]
