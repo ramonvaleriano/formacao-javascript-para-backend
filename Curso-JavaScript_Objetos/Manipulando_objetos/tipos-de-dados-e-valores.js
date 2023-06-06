@@ -11,3 +11,7 @@ const cliente = {
 
 console.log("O cliente: ");
 console.log(cliente);
+
+// Acessando esses dados.
+console.log("\nVamos acessar os dados: ");
+console.log(cliente.telefone[1]);
