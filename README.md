@@ -4,3 +4,4 @@
 
 - Curso Alura: [JavaScript: tipos, variáveis e funções](https://cursos.alura.com.br/course/fundamentos-javascript-tipos-variaveis-funcoes)
 - Curso Alura: [JavaScript: Arrays](https://cursos.alura.com.br/course/javascript-arrays)
+- Curso Alura: [JavaScript: Objetos](https://cursos.alura.com.br/course/javascript-objetos))
