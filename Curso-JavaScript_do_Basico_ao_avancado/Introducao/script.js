@@ -1,0 +1,1 @@
+console.log("Hello World com JavaScript, direto do arquivo script.js")
