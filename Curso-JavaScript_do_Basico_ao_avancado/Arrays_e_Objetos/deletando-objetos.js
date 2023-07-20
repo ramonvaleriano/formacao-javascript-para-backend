@@ -22,3 +22,10 @@ console.log(`Deletando: ${aSerDeletado}`);
 delete carro[aSerDeletado];
 
 console.log(carro);
+
+// Adicionando dados.
+
+carro["quitado"] = true;
+carro.economico = false;
+
+console.log(carro);
