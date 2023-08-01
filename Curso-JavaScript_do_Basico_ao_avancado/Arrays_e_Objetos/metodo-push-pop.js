@@ -14,3 +14,8 @@ let pessoaRemovida = pessoas.pop();
 console.log("Como ficou o Array: ");
 console.log(pessoas);
 console.log(`Dado excluído: ${pessoaRemovida}`);
+
+// Adicionando um novo elemento.
+pessoas.push('Valeriano')
+console.log("Como ficou o Array: ");
+console.log(pessoas);
