@@ -18,3 +18,18 @@ console.log(`Temos a nossa area: ${area}`)
 // Declerando a var depois do uso dela. 
 console.log(`Var sendo declarada depois: ${varDepois}`)
 var varDepois = 33;
+
+
+// Analisasando dados com let.
+
+let primeiroNumero = 10;
+let segundoNumero = 20;
+
+let soma = primeiroNumero + segundoNumero;
+
+// Testadno o resultado da let.
+console.log(`Testando as variáveis com let: `)
+console.log(`O primeiro número: ${primeiroNumero}`)
+console.log(`O segundo número: ${segundoNumero}`)
+console.log(`A soma dos números: ${soma}`)
+
