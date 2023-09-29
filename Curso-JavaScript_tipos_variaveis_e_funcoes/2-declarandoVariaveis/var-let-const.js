@@ -47,3 +47,17 @@ console.log("\n");
 console.log(`A forma exigida: ${formaGeometrica}`);
 console.log(`A area: ${areaGeo}`);
 
+// Analisando dados com const.
+const alturaConst = 10;
+const comprimentoConst = 5;
+
+const formaGeometricaConst = "quadrado";
+if (formaGeometrica === "quadrado") {
+  const areaConst = alturaConst ** 2;
+} else if (formaGeometrica === "triangulo") {
+  const areaConst = (alturaConst * comprimentoConst) / 2;
+} else {
+  const areaConst = null;
+}
+console.log("\n");
+console.log(`A area constante é: ${areaConst}`);
