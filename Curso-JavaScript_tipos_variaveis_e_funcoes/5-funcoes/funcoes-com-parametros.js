@@ -16,16 +16,20 @@ function mensage(mensage1, mensage2){
     return mensageResutl;
 }
 
+function mensageOne(mensage){
+    console.log(mensage);
+}
+
 // Usando as funções.
 let number1 = 10;
 let number2 = 20;
 
 let sumNumber = sumTwoNUmbers(number1, number2);
 let mensageResult = mensage(`A soma dos dois número ${number1} e ${number2}: `, sumNumber);
-console.log(mensageResult);
+mensageOne(mensageResult);
 
 number1 = 50;
 
 sumNumber = sumTwoNUmbers(number1, number2);
 mensageResult = mensage(`A soma dos dois número ${number1} e ${number2}: `, sumNumber);
-console.log(mensageResult);
+mensageOne(mensageResult);
