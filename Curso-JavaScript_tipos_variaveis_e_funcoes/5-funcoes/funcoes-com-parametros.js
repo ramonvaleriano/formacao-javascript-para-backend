@@ -20,6 +20,11 @@ function mensageOne(mensage){
     console.log(mensage);
 }
 
+function nameAge(name, age){
+    const mensage = `Meu nome é ${name} e minha idade é ${age}`;
+    return mensage;
+}
+
 // Usando as funções.
 let number1 = 10;
 let number2 = 20;
@@ -33,3 +38,5 @@ number1 = 50;
 sumNumber = sumTwoNUmbers(number1, number2);
 mensageResult = mensage(`A soma dos dois número ${number1} e ${number2}: `, sumNumber);
 mensageOne(mensageResult);
+
+mensageOne(nameAge('Ramon Valeriano', '34'))
