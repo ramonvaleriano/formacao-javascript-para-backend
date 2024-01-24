@@ -109,3 +109,4 @@ console.log(`Array Ordenado: ${notas3}`)
 console.log(`Array antes: ${notas3}`)
 notas3.splice(6, 3)
 console.log(`Array com elementos removidos: ${notas3}`)
+
