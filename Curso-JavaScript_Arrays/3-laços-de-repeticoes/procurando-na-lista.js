@@ -23,20 +23,31 @@ function exibirAlunoEnota(listaAlunoEMedias) {
 }
 
 const alunoNota = (nomeAluno, listaDeAlunosEMedias) => {
-    if (listaDeAlunosEMedias[0].includes(nomeAluno)){
-        console.log(`Nome do Aluno: ${nomeAluno}, se encontra no sistema.`)
-        let indexAluno = listaDeAlunosEMedias[0].indexOf(nomeAluno)
-        let notaAluno = listaDeAlunosEMedias[1][indexAluno]
-        console.log(`Aluno: ${nomeAluno} - Média: ${notaAluno}`)
-    } 
-    else{
-        console.log(`Nome do Aluno: ${nomeAluno}, não se encontra no sistema.`)
-        return null;
-    }
-}
+  if (listaDeAlunosEMedias[0].includes(nomeAluno)) {
+    console.log(`Nome do Aluno: ${nomeAluno}, se encontra no sistema.`);
+    let indexAluno = listaDeAlunosEMedias[0].indexOf(nomeAluno);
+    let notaAluno = listaDeAlunosEMedias[1][indexAluno];
+    console.log(`Aluno: ${nomeAluno} - Média: ${notaAluno}`);
+  } else {
+    console.log(`Nome do Aluno: ${nomeAluno}, não se encontra no sistema.`);
+    return null;
+  }
+};
+
+const alunoNota2 = (nomeAluno, listaDeAlunosEMedias) => {
+  // const alunos = listaDeAlunosEMedias[0];
+  // const notas = listaDeAlunosEMedias[1];
+  const [alunos, notas] = listaDeAlunosEMedias;
+  const existencia = alunos.includes(nomeAluno);
+  if (!existencia) {
+    console.log(`Aluno ${nomeAluno} não cadastrado.`);
+  }
+  const indexAluno = alunos.indexOf(nomeAluno);
+  const notaAluno = notas[indexAluno];
+};
 
 // Testando as funções.
 
 exibirAlunoEnota(listaDeAlunosEMedias);
-alunoNota("Juliana", listaDeAlunosEMedias)
-alunoNota("Ramon", listaDeAlunosEMedias)
+alunoNota("Juliana", listaDeAlunosEMedias);
+alunoNota("Ramon", listaDeAlunosEMedias);
