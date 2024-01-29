@@ -7,36 +7,36 @@
  */
 
 // Criando função para essa questão.
-function adicionarAnimais(arrayOriginal, arrayNovosAnimais){
-  if(Array.isArray(arrayOriginal) && Array.isArray(arrayNovosAnimais)){
-    if (arrayNovosAnimais.length > 0){
-      arrayOriginal.push(...arrayNovosAnimais)
+function adicionarAnimais(arrayOriginal, arrayNovosAnimais) {
+  if (Array.isArray(arrayOriginal) && Array.isArray(arrayNovosAnimais)) {
+    if (arrayNovosAnimais.length > 0) {
+      arrayOriginal.push(...arrayNovosAnimais);
     }
   }
 }
 
 const atendimento = (arrayAnimais) => {
-  if(Array.isArray(arrayAnimais) && arrayAnimais.length > 0){
-    console.log(`Animal atendido: ${arrayAnimais[0]}`)
-    arrayAnimais.shift()
+  if (Array.isArray(arrayAnimais) && arrayAnimais.length > 0) {
+    console.log(`Animal atendido: ${arrayAnimais[0]}`);
+    arrayAnimais.shift();
   }
-}
+};
 
 // Testando os dados.
 const clinica = new Array();
-console.log(`Fila de atendimento: ${clinica}`)
-adicionarAnimais(clinica, ['Cachorro', 'Gato', 'Papagaio'])
-console.log(`Fila de atendimento: ${clinica}`)
-atendimento(clinica)
-console.log(`Fila de atendimento: ${clinica}`)
-atendimento(clinica)
-console.log(`Fila de atendimento: ${clinica}`)
-adicionarAnimais(clinica, ['gavião', 'baleia'])
-console.log(`Fila de atendimento: ${clinica}`)
-atendimento(clinica)
-console.log(`Fila de atendimento: ${clinica}`)
-atendimento(clinica)
-console.log(`Fila de atendimento: ${clinica}`)
-atendimento(clinica)
-console.log(`Fila de atendimento: ${clinica}`)
-atendimento(clinica)
+console.log(`Fila de atendimento: ${clinica}`);
+adicionarAnimais(clinica, ["Cachorro", "Gato", "Papagaio"]);
+console.log(`Fila de atendimento: ${clinica}`);
+atendimento(clinica);
+console.log(`Fila de atendimento: ${clinica}`);
+atendimento(clinica);
+console.log(`Fila de atendimento: ${clinica}`);
+adicionarAnimais(clinica, ["gavião", "baleia"]);
+console.log(`Fila de atendimento: ${clinica}`);
+atendimento(clinica);
+console.log(`Fila de atendimento: ${clinica}`);
+atendimento(clinica);
+console.log(`Fila de atendimento: ${clinica}`);
+atendimento(clinica);
+console.log(`Fila de atendimento: ${clinica}`);
+atendimento(clinica);

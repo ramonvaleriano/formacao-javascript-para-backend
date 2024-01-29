@@ -7,8 +7,8 @@
 
 // Criando array esparso.
 const arrayEsparso = [1, , 3, , , , , 7];
-const quantidadeDeElementos = arrayEsparso.length
+const quantidadeDeElementos = arrayEsparso.length;
 
 // Exibiindo os dados.
-console.log(`O array: ${arrayEsparso}`)
-console.log(`Quantidade de eelementos: ${quantidadeDeElementos}`)
+console.log(`O array: ${arrayEsparso}`);
+console.log(`Quantidade de eelementos: ${quantidadeDeElementos}`);

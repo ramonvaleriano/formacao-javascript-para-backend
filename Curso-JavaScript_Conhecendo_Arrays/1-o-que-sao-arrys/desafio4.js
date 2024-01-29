@@ -12,9 +12,9 @@ function adicionandoTresElementos(
   numero3 = false
 ) {
   if (numero1 && numero2 && numero3) {
-    arrayDados.push(numero1, numero2, numero3)
-    }
+    arrayDados.push(numero1, numero2, numero3);
   }
+}
 
 function mensagem(mensagemEntrada, dados = false) {
   if (mensagemEntrada && dados) {
@@ -24,7 +24,6 @@ function mensagem(mensagemEntrada, dados = false) {
     console.log(`${mensagemEntrada}`);
   }
 }
-
 
 // Testando os dados.
 const meuArray = new Array();
