@@ -29,25 +29,26 @@ const listaEstudantes = [
 ];
 
 // Criando uma função para dividir a lista em duas partes.
-function dividirTurmas(listaDeEstudantes){
-    if(!Array.isArray(listaDeEstudantes) && listaDeEstudantes.length <= 0) return [[],[]]
-    let turma1 = new Array();
-    let turma2 = new Array();
-    
-    if (listaDeEstudantes.length % 2 === 0){
-        turma1 = listaDeEstudantes.slice(0, listaDeEstudantes.length / 2)
-        turma2 = listaDeEstudantes.slice(listaDeEstudantes.length /  2)
-    } else{
-        const meio = Math.ceil(listaDeEstudantes.length / 2)
-        turma1 = listaDeEstudantes.slice(0, meio)
-        turma1 = listaDeEstudantes.slice(meio)
-    }
-    return [turma1, turma2]
+function dividirTurmas(listaDeEstudantes) {
+  if (!Array.isArray(listaDeEstudantes) && listaDeEstudantes.length <= 0)
+    return [[], []];
+  let turma1 = new Array();
+  let turma2 = new Array();
+
+  if (listaDeEstudantes.length % 2 === 0) {
+    turma1 = listaDeEstudantes.slice(0, listaDeEstudantes.length / 2);
+    turma2 = listaDeEstudantes.slice(listaDeEstudantes.length / 2);
+  } else {
+    const meio = Math.ceil(listaDeEstudantes.length / 2);
+    turma1 = listaDeEstudantes.slice(0, meio);
+    turma1 = listaDeEstudantes.slice(meio);
+  }
+  return [turma1, turma2];
 }
 
 // Testanoo os dados.
-const [turma1, turma2] = dividirTurmas(listaEstudantes)
+const [turma1, turma2] = dividirTurmas(listaEstudantes);
 
-console.log(listaEstudantes)
-console.log(turma1)
-console.log(turma2)
+console.log(listaEstudantes);
+console.log(turma1);
+console.log(turma2);
