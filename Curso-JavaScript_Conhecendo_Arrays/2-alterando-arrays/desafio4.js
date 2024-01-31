@@ -5,4 +5,14 @@
  */
 
 // Função para resolução da questão.
+function uniaoDeCardapios(array1, array2){
+  const array3 = array1.concat(array2)
+  return array3
+}
 
+// Testando os dados.
+const rangoPrincipal = ['Arroz', 'Feijão', 'Macarrão', 'Carne', 'Frango']
+const ranguinho = ['Sorvete', 'Cocada', 'Leite Condensado']
+
+const menu = uniaoDeCardapios(rangoPrincipal, ranguinho)
+console.log(menu)
