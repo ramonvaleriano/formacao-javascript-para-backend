@@ -24,14 +24,26 @@ function mediaNotasFor(notas) {
   return null;
 }
 
-function mediaNotasForOf(notas){
-    if (validadeDoArray(notas){
-        let soma = 0
-        for(let valor of notas){
-            soma+=valor
-        }
-        let media = soma / notas.length
-        return media
+function mediaNotasForOf(notas) {
+  if (validadeDoArray(notas)) {
+    let soma = 0;
+    for (let valor of notas) {
+      soma += valor;
     }
-    return null
+    let media = soma / notas.length;
+    return media;
+  }
+  return null;
+}
+
+function mediaForEach(notas) {
+  if (validadeDoArray(notas)) {
+    let soma = 0;
+    notas.forEach((element) => {
+      soma += element;
+    });
+    let media = soma / notas.length;
+    return media;
+  }
+  return null;
 }
