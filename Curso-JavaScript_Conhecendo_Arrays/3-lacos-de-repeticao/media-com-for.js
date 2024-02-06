@@ -23,3 +23,15 @@ function mediaNotasFor(notas) {
   }
   return null;
 }
+
+function mediaNotasForOf(notas){
+    if (validadeDoArray(notas){
+        let soma = 0
+        for(let valor of notas){
+            soma+=valor
+        }
+        let media = soma / notas.length
+        return media
+    }
+    return null
+}
