@@ -47,3 +47,14 @@ function mediaForEach(notas) {
   }
   return null;
 }
+
+function mediaComReduce(notas) {
+  if (validadeDoArray(notas)) {
+    const somaNumeros = nota.reduce((soma, valor) => {
+      soma += valor;
+    }, 0);
+    let media = somaNumeros / notas.length;
+    return media;
+  }
+  return null;
+}
