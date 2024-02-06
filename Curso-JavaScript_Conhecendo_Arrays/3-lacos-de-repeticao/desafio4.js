@@ -16,7 +16,16 @@ function validadeDoArray(arrayDados) {
 }
 
 function maiorMenorValorDaLista(arrayDados){
-  if (!validadeDoArray) return null
+  if (!validadeDoArray(arrayDados)) return null
+  
+  if (arrayDados.length === 1) return {'maior': arrayDados[0], 'menor': arrayDados[0]}
+
+  let menor = arrayDados[0]
+  let maior = arrayDados[0]
+
+  for (valor of arrayDados){
+    
+  }
 }
 
 // Resolvendo a questão.
