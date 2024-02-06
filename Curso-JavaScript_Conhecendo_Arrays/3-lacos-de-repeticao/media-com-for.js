@@ -8,6 +8,7 @@ function validadeDoArray(arrayDados) {
   if (!Array.isArray(arrayDados) || arrayDados.length <= 0) {
     return false;
   }
+  console.log('Deus certo, passei na validação')
   return true;
 }
 
@@ -50,11 +51,18 @@ function mediaForEach(notas) {
 
 function mediaComReduce(notas) {
   if (validadeDoArray(notas)) {
-    const somaNumeros = nota.reduce((soma, valor) => {
-      soma += valor;
+    const somaNumeros = notas.reduce((soma, valor) => {
+      return soma += valor;
     }, 0);
     let media = somaNumeros / notas.length;
     return media;
   }
   return null;
 }
+
+// Dados para testes.
+const notas = [10, 6.5, 8, 7.5];
+
+// Testando as médias
+let media = mediaComReduce(notas)
+console.log(media)
