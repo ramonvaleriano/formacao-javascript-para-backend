@@ -18,15 +18,28 @@ function validadeDoArray(arrayDados) {
 function maiorMenorValorDaLista(arrayDados){
   if (!validadeDoArray(arrayDados)) return null
   
-  if (arrayDados.length === 1) return {'maior': arrayDados[0], 'menor': arrayDados[0]}
+  if (arrayDados.length === 1) return [arrayDados[0], arrayDados[0]]
 
   let menor = arrayDados[0]
   let maior = arrayDados[0]
 
   for (valor of arrayDados){
-    
+    if (valor > maior){
+      maior = valor
+    }
+    else if (valor < menor) {
+      menor = valor
+    }
   }
+
+  return [maior, menor]
 }
 
 // Resolvendo a questão.
 const numeros = [3, 8, 12, 5, 6, 10, 7, 2, 9, 14];
+
+// Testando a função.
+const [maior, menor] = maiorMenorValorDaLista(numeros)
+
+console.log(`Testando o maior número: ${maior}`)
+console.log(`Testando o menor número: ${menor}`)
