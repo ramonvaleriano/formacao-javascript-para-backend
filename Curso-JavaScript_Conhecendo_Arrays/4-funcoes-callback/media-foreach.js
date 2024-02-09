@@ -13,6 +13,19 @@ function validaArray(arrayDados) {
   return true;
 }
 
-const mediaNotas = (arrayDados) => {};
+const mediaNotas = (arrayDados) => {
+    if (!validaArray(arrayDados)){
+        console.log('Não foi possível realizar o calculo da média')
+    }
+    let somaDasnotas = 0
+    let media = 0
+    arrayDados.forEach(element => {
+        somaDasnotas += element
+    });
+
+    media = somaDasnotas / arrayDados.length
+
+    return media
+};
 
 //Dados para user no teste.
