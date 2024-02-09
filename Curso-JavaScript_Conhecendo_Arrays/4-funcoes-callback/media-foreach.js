@@ -33,4 +33,4 @@ const notas = [10, 6.5, 8, 7.5];
 
 // Executando teste.
 const media = mediaNotas(notas);
-console.log(`A média: ${media}`)
+console.log(`A média: ${media}`);
