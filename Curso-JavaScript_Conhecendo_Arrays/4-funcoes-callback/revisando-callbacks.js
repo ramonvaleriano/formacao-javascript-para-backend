@@ -23,13 +23,13 @@ function atualizaNota(arrayDados) {
   const notasAtualizadas = arrayDados.map((dado) => {
     if (dado + 1 >= 10) {
       dado = 10;
-      console.log('A nota se tornou a máxima!')
+      console.log("A nota se tornou a máxima!");
     } else if (dado <= 0) {
       dado = 0;
-      console.log('Aluno com nota zerada.')
+      console.log("Aluno com nota zerada.");
     } else {
       dado += 1;
-      console.log(`Aluno com nota atualizada: ${dado}`)
+      console.log(`Aluno com nota atualizada: ${dado}`);
     }
 
     return dado;
@@ -42,6 +42,6 @@ function atualizaNota(arrayDados) {
 const notas = [10, 9.5, 8, 7, 6];
 
 // Testandoa a função.
-console.log(`Como são as notas: ${notas}`)
-const notasAtualizadas = atualizaNota(notas)
-console.log(`Notas atualizadas: ${notasAtualizadas}`)
+console.log(`Como são as notas: ${notas}`);
+const notasAtualizadas = atualizaNota(notas);
+console.log(`Notas atualizadas: ${notasAtualizadas}`);
