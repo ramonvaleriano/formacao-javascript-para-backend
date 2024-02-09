@@ -1,6 +1,6 @@
 /**
  * Laços de Repetições.
- * 4 - Crie uma função que receba uma array de números inteiros e retorne o menor valor e o maior valor da array, no seguinte formato: 
+ * 4 - Crie uma função que receba uma array de números inteiros e retorne o menor valor e o maior valor da array, no seguinte formato:
  * 'o menor número é X e o maior número é Y'.
  */
 
@@ -15,31 +15,30 @@ function validadeDoArray(arrayDados) {
   return true;
 }
 
-function maiorMenorValorDaLista(arrayDados){
-  if (!validadeDoArray(arrayDados)) return null
-  
-  if (arrayDados.length === 1) return [arrayDados[0], arrayDados[0]]
+function maiorMenorValorDaLista(arrayDados) {
+  if (!validadeDoArray(arrayDados)) return null;
 
-  let menor = arrayDados[0]
-  let maior = arrayDados[0]
+  if (arrayDados.length === 1) return [arrayDados[0], arrayDados[0]];
 
-  for (valor of arrayDados){
-    if (valor > maior){
-      maior = valor
-    }
-    else if (valor < menor) {
-      menor = valor
+  let menor = arrayDados[0];
+  let maior = arrayDados[0];
+
+  for (valor of arrayDados) {
+    if (valor > maior) {
+      maior = valor;
+    } else if (valor < menor) {
+      menor = valor;
     }
   }
 
-  return [maior, menor]
+  return [maior, menor];
 }
 
 // Resolvendo a questão.
 const numeros = [3, 8, 12, 5, 6, 10, 7, 2, 9, 14];
 
 // Testando a função.
-const [maior, menor] = maiorMenorValorDaLista(numeros)
+const [maior, menor] = maiorMenorValorDaLista(numeros);
 
-console.log(`Testando o maior número: ${maior}`)
-console.log(`Testando o menor número: ${menor}`)
+console.log(`Testando o maior número: ${maior}`);
+console.log(`Testando o menor número: ${menor}`);
