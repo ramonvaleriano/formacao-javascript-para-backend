@@ -37,4 +37,17 @@ function validadorTrue(variavel) {
   return false;
 }
 
-module.exports = { exibirMensagem, validadorFalse, validadorTrue };
+const funcaoPorFuncaoError = (funcao) => {
+  try {
+    return funcao;
+  } catch (error) {
+    console.error(`ERROR Gerado: ${error}`);
+  }
+};
+
+module.exports = {
+  exibirMensagem,
+  validadorFalse,
+  validadorTrue,
+  funcaoPorFuncaoError,
+};
