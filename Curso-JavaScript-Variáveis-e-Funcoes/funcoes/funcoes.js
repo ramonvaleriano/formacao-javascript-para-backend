@@ -39,6 +39,9 @@ function validadorTrue(variavel) {
 
 const funcaoPorFuncaoError = (funcao) => {
   try {
+    if (typeof funcao == "function") {
+      return funcao();
+    }
     return funcao;
   } catch (error) {
     console.error(`ERROR Gerado: ${error}`);
