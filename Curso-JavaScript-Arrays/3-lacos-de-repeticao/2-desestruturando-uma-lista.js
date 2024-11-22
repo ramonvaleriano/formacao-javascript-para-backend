@@ -14,12 +14,12 @@ const encontraNota = (lista, nomeAluno) => {
     // Destruturando uma lista em duas
     const [alunos, medias] = lista
     let nota = null
-    if(alunos.includes(nomeAluno)){
+    if (alunos.includes(nomeAluno)) {
         let indexAluno = alunos.indexOf(nomeAluno)
 
         nota = medias[indexAluno]
     }
-    
+
     return nota
 }
 

@@ -26,13 +26,17 @@ let arrayDados = new Array(
   "Camilo"
 );
 
-console.log(`Lista de alunos: ${arrayDados} -- Há ${arrayDados.length} alunos`)
+console.log(`Lista de alunos: ${arrayDados} -- Há ${arrayDados.length} alunos`);
 
 // Usando método splice para realizar mudanças no código.
 // Retirando ana e caio
-arrayDados.splice(2, 2)
-console.log(`Retirando dois alunos: ${arrayDados} -- Há ${arrayDados.length} alunos`)
+arrayDados.splice(2, 2);
+console.log(
+  `Retirando dois alunos: ${arrayDados} -- Há ${arrayDados.length} alunos`
+);
 
 // Adicionando um novo aluno, no lugar da renata.
-arrayDados.splice(-3, 1, "Ramon")
-console.log(`Substituindo um Aluno: ${arrayDados} -- Há ${arrayDados.length} alunos`)
+arrayDados.splice(-3, 1, "Ramon");
+console.log(
+  `Substituindo um Aluno: ${arrayDados} -- Há ${arrayDados.length} alunos`
+);
