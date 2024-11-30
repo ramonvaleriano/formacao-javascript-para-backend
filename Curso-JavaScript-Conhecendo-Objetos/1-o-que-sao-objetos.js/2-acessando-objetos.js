@@ -22,11 +22,11 @@ let turmaEstudante = estudante["turma"];
 console.log(`Turma do estudante: ${turmaEstudante}`);
 
 // Rodando todo o objeto com for...in
-for (pessoa in estudante){
-    console.log(`"${pessoa}": "${estudante[pessoa]}"`)
+for (pessoa in estudante) {
+  console.log(`"${pessoa}": "${estudante[pessoa]}"`);
 }
 
 // Rodando com foreach
 Object.keys(estudante).forEach((key) => {
-    console.log(`"${key}": "${estudante[key]}"`)
-})
+  console.log(`"${key}": "${estudante[key]}"`);
+});
